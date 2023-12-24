@@ -1,0 +1,82 @@
+// main: ../style.less
+
+#about{
+	margin: 8.4rem 0;
+}
+
+.about__inner{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+
+.about__photo{
+	position: relative;
+	width: 50%
+}
+
+.ab__photo{
+	position: relative;
+	z-index: 2;
+	display: block;
+	max-width: 100%;
+	border-radius: 0;
+	height: auto;
+	z-index: 3;
+	transition: 0.9s linear;
+	cursor: pointer
+}
+.ab__photo:hover{
+	  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.about__photo:before{
+	content: "";
+	width: 413px;
+	height: 413px;
+	background-color: #00ff2b52;
+	position: absolute;
+	left: -1rem;
+	bottom: -1rem;
+	z-index: 2;
+}
+
+.about__photo:after{
+	content: "";
+	width: 413px;
+	height: 413px;
+	background-color: #ff000040;
+	position: absolute;
+	right: -1rem;
+	top: -1rem;
+	z-index: 1;
+}
+
+.about__content{
+	width: 50%;
+	padding-left: 3.2rem
+}
+.about__subtitle{
+	font-size: 3rem;
+	color: @black;
+	font-weight: 700;
+}
+.about__title{
+	color: fade(@black, 15%);
+	font-size: 6.1rem;
+	font-weight: 700;
+	line-height: 1.1;
+	margin-bottom: 1.4rem;
+}
+.about__text{
+	font-size: 0.95rem;
+	color: @gray;
+	line-height: 2;
+	font-weight: 300;
+	margin-bottom: 2.8rem;
+}
+p{
+	text-align: justify
+}

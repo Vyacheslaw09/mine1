@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link rel = "stylesheet" href="CSS/style.css">
+  	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Open+Sans:wght@500&display=swap');
+	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.js"></script>
+    <title>Portfolio</title>
+	<link rel="icon" href="images/logo.jpg" type="image/x-icon">
+</head>
+<body class="no-scroll">
+					
+	<div id="preloader"></div>
+    <!-- Header -->
+    <header class="header">
+    <div class="container">
+        <div class="header__inner" >
+          
+			
+        	<div class="avatar">
+            	<div class="user__avatar">
+					<a href="#">
+                	<img src="images/logo.jpg" style="width: 50px; height: 50px" alt="">
+					</a>
+				</div>
+            	<div class="user__content">
+                	<div class="user__name">
+                		Vyacheslaw Khrapowitskiy
+                	</div>
+                	<div class="user__work">
+                		Frontend Developer
+                	</div>
+            	</div>
+        	</div>
+			
+<input id="menu-toggle" type="checkbox" />
+  <label class='menu-button-container' for="menu-toggle">
+   <div class='menu-button'></div>
+  </label>
+			<ul class="menu">
+					 <li><a class="nav-name" href="#works">work</a></li>
+					 <li><a class="nav-name" href="#about">about me</a></li>
+					 <li><a class="nav-name" href="#news">blog</a></li>
+					 <li><a class="nav-name" href="#footer">contact</a></li>
+					</ul>
+			
+        	<nav class="nav">
+            	<a class="nav__link" href="#works">work</a>
+            	<a class="nav__link" href="#about">about me</a>
+            	<a class="nav__link" href="#news">blog</a>
+            	<a class="nav__link" href="#footer">contact</a>
+            	<a class="btn-toggle nav__link active" href="#">dark theme</a>
+        	</nav>    
+            
+        </div>
+    </div>
+    </header>
+    
+    <!-- Introduce -->
+    <section class="intro">
+    <div class="container">
+        <div class="intro__inner">
+			
+           <div class="intro__content">
+            	<h2 class="intro__title" >Hello, i'm</h2>
+            	<h1 class="intro__subtitle">Vyacheslaw Khrapowitskiy</h1>
+            	<div class="intro__text">Frontend Developer (junior)</div>
+			   
+				<div class="social">
+					<a class="social__link" href="site/index.html">
+						<img style="width: 50px;background: white" src="images/behance.png" alt="">
+					</a>   
+					<a class="social__link" href="https://t.me/khrapowitskiy">
+						<img style="width: 50px;background: white " src="images/telegram.png" alt="">
+					</a>   
+					<a class="social__link" href="https://github.com/Vyacheslaw09?tab=repositories">
+						<img style="width: 50px; background: white" src="images/gh.png" alt="">
+					</a>   
+					<a class="social__link" href="https://v.khrapowitskiy@gmail.com">
+						<img style="width: 50px; background: white" src="images/gmail.png" alt="">
+					</a>
+				</div>	
+				<div class="button">
+			   		<button class="btn" type="button">
+						<a href="tel:+375259809781">call me</a>
+					</button>
+			   		<button class="btn" type="button" data-modal="#proj2">
+				   		see my resume
+			   		</button>
+					
+					
+					
+			   </div>
+           	</div>	
+				<img class="intro__photo" src="images/logo.jpg" alt="">
+				<img class="intro__photo2" src="images/dark.png" alt="">
+
+        </div> 
+    </div>
+   </section>
+	
+	<!-- Works -->
+	<div id="works">
+	<div class="container">
+			
+		<div class="nav__works">
+			<a class="works__link" href="" data-filter="all">
+				All
+			</a>
+			<a class="works__link" href="" data-filter="websites">
+				Websites
+			</a>
+			<a class="works__link" href="" data-filter="design">
+				Design
+			</a>
+		</div>
+		
+		<div class="portfolio" id="portfolio">
+			
+			<div class="portfolio__struct" data-cat="design" data-modal="#proj1">
+				<div class="portfolio__item">
+					<img class="portfolio__img" src="images/n2.png" alt="">
+					<div class="portfolio__content">
+						<div class="portfolio__title">
+							Design
+						</div>
+						<div class="portfolio__subtitle">
+							Lopus project
+							<time class="date" datetime="2023-05-12 10:30">2023</time>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="portfolio__struct" data-cat="design" data-modal="#proj4">	
+				<div class="portfolio__item">
+					<img class="portfolio__img" src="images/n3.png" alt="">
+					<div class="portfolio__content">
+						<div class="portfolio__title">
+							Design
+						</div>
+						<div class="portfolio__subtitle">
+							milelogistics
+							<time class="date" datetime="2023-10-01 19:56">2023</time>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="portfolio__struct" data-cat="websites" data-modal="#proj5">	
+				<div class="portfolio__item">
+					<img class="portfolio__img" src="images/n1.png" alt="">
+					<div class="portfolio__content">
+						<div class="portfolio__title">
+							Website
+						</div>
+						<div class="portfolio__subtitle">
+							Gambling project
+							<time class="date" datetime="2023-10-01 19:56">2023</time>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="portfolio__struct" data-cat="websites" data-modal="#proj6">
+				<div class="portfolio__item">
+					<img class="portfolio__img" src="images/n4.png" alt="">
+					<div class="portfolio__content">
+						<div class="portfolio__title">
+							Website
+						</div>
+						<div class="portfolio__subtitle">
+							uro-pro
+							<time class="date" datetime="2023-10-01 19:56">2023</time>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="portfolio__struct" data-cat="design" data-modal="#proj7">	
+				<div class="portfolio__item">
+					<img class="portfolio__img" src="images/n5.png" alt="">
+					<div class="portfolio__content">
+						<div class="portfolio__title">
+						Design
+						</div>
+						<div class="portfolio__subtitle">
+							Puzzle agro-world 
+							<time class="date" datetime="2023-10-01 19:56">2023</time>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="portfolio__struct" data-cat="websites" data-modal="#proj8">
+				<div class="portfolio__item">
+					<img class="portfolio__img" src="images/n6.png" alt="">
+					<div class="portfolio__content">
+						<div class="portfolio__title">
+							Website
+						</div>
+						<div class="portfolio__subtitle">
+							Belhromit project
+							<time class="date" datetime="2023-10-01 19:56">2023</time>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio__struct" data-cat="websites" data-modal="#proj9">
+				<div class="portfolio__item">
+					<img class="portfolio__img" src="images/n7.png" alt="">
+					<div class="portfolio__content">
+						<div class="portfolio__title">
+							Website
+						</div>
+						<div class="portfolio__subtitle">
+							own portfolio
+							<time class="date" datetime="2023-12-24 19:56">2023</time>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div><!-- portfolio -->
+	</div><!-- container -->
+	</div><!-- works end -->
+
+	<!-- about -->
+	<section id="about">
+	<div class="container">
+		<div class="about__inner">
+		
+			<div class="about__photo">
+				<img class="ab__photo" src="images/own.jpg" alt="">
+			</div>
+			
+			<div class="about__content">
+				<h3 class="about__subtitle">INFORMATION</h3>
+				<h2 class="about__title">WHO AM I</h2>
+				<div class="about__text">
+					<p>Hello, my name's Vyacheslaw. My last name - Khrapowitskiy. In 2023 I graduated from the College of Trade and Economics.  </p>
+					<p>During my studies, I completed an internship in front-end development, I am a junior specialist in this area, but with little experience in this topic.  In development, I can communicate with designers, backend developers and others on the team.</p>  
+					<p>Skills allow you to remember a lot of new information and reproduce it at work.  I have a good knowledge of the basics of HTML, CSS, Js, frameworks, libraries and other things that may be interesting.  Fully prepared for your questions and technical interview.  I look forward to working with you and your company to advance common goals in a knowledgeable manner.</p>
+				</div>
+				<div class="button">
+			   		<button class="btn" type="button">
+						<a href="tel:+375259809781">call me</a>
+			   		</button>
+			   		<button class="btn" type="button" data-modal="#proj2">
+				   		see my resume
+			   		</button>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	</section>
+	
+	<!-- NEWS -->
+	<section id="news">
+	<div class="container">
+		
+		<div class="news__header">	
+			<h3 class="news__subtitle">check out my skills</h3>
+			<div class="news__text">
+				The level of my knowledge is described here
+			</div>
+		</div>
+			
+		<div class="portfolio">	<!-- news -->		
+			
+		<div class="portfolio__struct" data-modal="#html">	
+		<div class="portfolio__item">
+
+			<img class="portfolio__img" src="images/html.jpeg" alt="">
+			<div class="portfolio__content">
+				<div class="portfolio__subtitle">
+					Html
+				</div>	
+				<div style="text-transform: none" class="portfolio__title">
+					<i>Knowledge of HTML\CSS, as well as experience with Bootstrap,Pure.css, and UIKit frameworks...</i>
+				</div>
+				<button class="btn2" type="button">
+				   	read more
+			 	</button>
+			</div>
+				
+		</div>
+		</div>
+			
+		<div class="portfolio__struct" data-modal="#js">	
+		<div class="portfolio__item">
+			
+			<img class="portfolio__img" src="images/js.png" alt="">
+			<div class="portfolio__content">
+				<div class="portfolio__subtitle">
+					JavaScript
+				</div>
+				<div style="text-transform: none" class="portfolio__title">
+					<i>Knowledge of JS, as well as popular frameworks (Ruby on Rails, .NET Core, Laravel and etc.) and Vue.js...</i>
+				</div>
+				<button class="btn2" type="button">
+					read more
+			  	</button>
+			</div>
+				
+		</div>
+		</div>
+
+		<div class="portfolio__struct" data-modal="#css">
+		<div class="portfolio__item">
+			
+			<img class="portfolio__img" src="images/css.png" alt="">
+			<div class="portfolio__content">
+				<div class="portfolio__subtitle">
+					CSS
+				</div>
+				<div style="text-transform: none" class="portfolio__title">
+					<i>Creating design layouts for websites in the Figma & Gulp editor. experience with the SCSS & Less preprocessor...</i>
+				</div>
+				<button class="btn2" type="button">
+					read more
+			  	</button>
+			</div>
+				
+		</div>
+		</div>
+		
+		</div><!-- news end -->
+		
+	</div>
+	</section>
+	
+	<footer id="footer">
+	<div class="container">
+		
+		<div class="footer__inner">
+			
+			<div class="footer__social">
+				<div class="footer__text">
+					&copy; Created with love, 2023
+				</div>
+				<div class="footer_icons">
+					<a href="https://www.behance.net/gallery/164779267/portfolio" target="_self">
+						<img style="border-radius: 0; width: 25px" src="images/behance2.png" alt="">	
+					</a>
+					<a href="https://t.me/khrapowitskiy" target="_self">
+						<img style="border-radius: 0; width: 25px" src="images/telegram2.png" alt="">	
+					</a>
+					<a href="https://github.com/Vyacheslaw09?tab=repositories" target="_self">
+						<img style="border-radius: 0; width: 25px" src="images/gh2.png" alt="">	
+					</a>
+					<a href="https://v.khrapowitskiy@gmail.com" target="_self">
+						<img style="border-radius: 0; width: 25px" src="images/gmail2.png" alt="">	
+					</a>
+				</div>
+			</div>
+			
+			<div class="footer__nav">
+				<a class="footer__link" href="#works">Work</a>
+				<a class="footer__link" href="#about">About me</a>
+				<a class="footer__link" href="#news">Blog</a>
+				<a class="footer__link" href="#">Home</a>
+			</div>
+		</div>	
+		
+	</div>
+	</footer>
+	
+	<!-- Modals -->
+	<div class="modal" id="proj1">
+	<div class="modal__dialog">
+			
+		<button class="close" type="button" data-close>
+			<img style="width: 34px; height: 34px;" src="images/black.png" alt="">
+		</button>
+			
+		<div class="modal_work">
+			<div class="modal_photo">
+				<img style="width: 100%; border-radius: 0" src="images/n2.png" alt="">
+			</div>
+			
+			<div class="modal_text">
+				<h2 class="modal_subtitle">LOPUS project</h2>
+				<h4 class="modal_title">Design | 2023</h4>
+				<div class="modal_info">
+					In the photo you can see the image with the support of the Adobe 	Photoshop graphics editor. The first project on the freelance exchange. Stylization of fonts, colors, knowledge of coloristics. Then the work is completely from the software product, each element is divided into layers and its own objects, when editing, which complement each other. 
+					<p>Client: <a href="https://lopus.ru/">LOPUS</a></p>
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+	</div>
+	
+	<div class="modal" id="proj2" >
+	<div class="modal__dialog2">
+			
+		<button class="close" type="button" data-close>
+			<img style="width: 34px; height: 34px;" src="images/black.png" alt="">
+		</button>
+
+		<div class="modal_work2">
+			<div class="modal_photo2">
+				<img style="width: 100%; border-radius: 0" src="images/resume.png" alt="">
+			</div>	
+		</div>
+		
+	</div>
+	</div>
+	
+	<div class="modal" id="proj4">
+	<div class="modal__dialog">
+			
+		<button class="close" type="button" data-close>
+			<img style="width: 34px; height: 34px;" src="images/black.png" alt="">
+		</button>
+			
+		<div class="modal_work">
+			<div class="modal_photo">
+				<img style="width: 100%; border-radius: 0" src="images/n3.png" alt="">
+			</div>
+			
+			<div class="modal_text">
+				<h2 class="modal_subtitle">MileLogistics</h2>
+				<h4 class="modal_title">Design | 2023</h4>
+				<div class="modal_info">
+					The project was implemented on the basis of HTML,CSS. Email signature for MileLogistics. During the pandemic, also on the freelance exchange. The design combines two stages - the implementation of visual content in Figma, then in the language of hypertext markup with the connection of a table of cascading styles. 
+					<p>Client: <a href="https://mile-logistics.eu/">Milelogistics</a></p>
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+	</div>
+	
+	<div class="modal" id="proj5">
+	<div class="modal__dialog">
+			
+		<button class="close" type="button" data-close>
+			<img style="width: 34px; height: 34px;" src="images/black.png" alt="">
+		</button>
+			
+		<div class="modal_work">
+			<div class="modal_photo">
+				<img style="width: 100%; border-radius: 0" src="images/n1.png" alt="">
+			</div>
+			
+			<div class="modal_text">
+				<h2 class="modal_subtitle">Gambling project</h2>
+				<h4 class="modal_title">Website | 2023</h4>
+				<div class="modal_info">
+					Development of an adaptive website header design for the development of your portfolio. It is not a commercial order. Using HTML, CSS, LESS, JS connection, knowledge of BEM methodology, preprocessors for convenient layout. And irreplaceable jQuery
+					<p>Client: <a href="https://vyacheslaw09.github.io/project_of_gambling/minsk">portfolio</a></p>
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+	</div>
+
+	<div class="modal" id="proj6">
+	<div class="modal__dialog">
+			
+		<button class="close" type="button" data-close>
+			<img style="width: 34px; height: 34px;" src="images/black.png" alt="">
+		</button>
+			
+		<div class="modal_work">
+			<div class="modal_photo">
+				<img style="width: 100%; border-radius: 0" src="images/n4.png" alt="">
+			</div>
+			
+			<div class="modal_text">
+				<h2 class="modal_subtitle">uro-pro project</h2>
+				<h4 class="modal_title">Website | 2023</h4>
+				<div class="modal_info">
+					Another project in my portfolio with freelance work. This is the very beginning of my work. If you look at the code part of this project, you will notice that the site was created using the Tilde constructor. No effort spent, but at the same time a good first experience in developing a website, so to speak. Learning its basics from a small one, even if it's a constructor. Connecting JS manually is also present here
+					<p>Client: <a href="https://urolog.dn.ua/">Freelance</a></p>
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+	</div>
+	
+	<div class="modal" id="proj7">
+	<div class="modal__dialog">
+			
+		<button class="close" type="button" data-close>
+			<img style="width: 34px; height: 34px;" src="images/black.png" alt="">
+		</button>
+			
+		<div class="modal_work">
+			<div class="modal_photo">
+				<img style="width: 100%; border-radius: 0" src="images/n5.png" alt="">
+			</div>
+			
+			<div class="modal_text">
+				<h2 class="modal_subtitle">SPACE-graphic project</h2>
+				<h4 class="modal_title">Design | 2023</h4>
+				<div class="modal_info">
+					Continuation of graphic works in a commercial style. My previous job is a project in my portfolio. Development of technical design, both of the box and its design design. From 0 to its very completion, you can see it in the photo. The work was done on AdobePhotoshop, CorelDRAW, Illustrator.s
+					This work is based on other projects that have been implemented
+					<p>Client: <a href="http://space-graphic.by/">SPACE-graphic</a></p>
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+	</div>
+	
+	<div class="modal" id="proj8">
+	<div class="modal__dialog">
+			
+		<button class="close" type="button" data-close>
+			<img style="width: 34px; height: 34px;" src="images/black.png" alt="">
+		</button>
+			
+		<div class="modal_work">
+			<div class="modal_photo">
+				<img style="width: 100%; border-radius: 0" src="images/n6.png" alt="">
+			</div>
+			
+			<div class="modal_text">
+				<h2 class="modal_subtitle">belhromit project</h2>
+				<h4 class="modal_title">Website | 2023</h4>
+				<div class="modal_info">
+					The development of this website in pure HTML, CSS and js is an internship project at MediaLime. It has all the basics of a novice developer, from HTML to modal windows with the connection of various JS & jQuery libraries. The work was carried out jointly with other developers within the company. The work was accompanied from the creation of the layout of the website design to its full release on the Internet
+					<p>Client: <a href="https://belchromit.by/">belhromit</a></p>
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+	</div>
+	<div class="modal" id="proj9">
+	<div class="modal__dialog">
+			
+		<button class="close" type="button" data-close>
+			<img style="width: 34px; height: 34px;" src="images/black.png" alt="">
+		</button>
+			
+		<div class="modal_work">
+			<div class="modal_photo">
+				<img style="width: 100%; border-radius: 0" src="images/n7.png" alt="">
+			</div>
+			
+			<div class="modal_text">
+				<h2 class="modal_subtitle">own portfolio</h2>
+				<h4 class="modal_title">Website | 2023</h4>
+				<div class="modal_info">
+					The site was created for a detailed acquaintance with my graphic works, where you can look at the site both for the work of a personal layout designer and a designer entirely
+					<p>Client: <a href="https://belchromit.by/">portfolio</a></p>
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+	</div>
+	
+	
+	<div class="modal" id="html">
+	<div class="modal__dialog">
+			
+		<button class="close" type="button" data-close>
+			<img class="close2"  src="images/black.png" alt="">
+		</button>
+			
+		<div class="modal_work">
+			<div class="modal_text">
+				<h2 class="modal_subtitle">HTML</h2>
+				<div class="modal_info">
+					I have over a year's experience in Front-end development, layout: HTML, CSS, JavaScript, Vue.js, Node.js - Knowledge of one or more of the popular web frameworks Laravel, Meteor, Sinatra, Flask, NET.Core, Djanho; Understanding of the features of adaptive layout, layout for mobile devices (iOS); 
+					<p>Experience with Gulp, Vite (or others) assemblers. Experience with Figma, Zeplin. Image optimization skills for the web.Knowledge: PHP, Wordpress, React, Git. The ability not only to write code, but also to test your product qualitatively, explain logic. Clean understandable structural code. Passing validation at all stages and levels of complexity</p>As an example, this site was written by me in HTML, CSS (and its LESS preprocessor), with JS connection. And some animations on jQuery. BEM methodology is present in the full understanding of this knowledge
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+	</div>
+	
+	<div class="modal" id="css">
+	<div class="modal__dialog">
+			
+		<button class="close" type="button" data-close>
+			<img style="width: 34px; height: 34px;" src="images/black.png" alt="">
+		</button>
+			
+		<div class="modal_work">
+			<div class="modal_text">
+				<h2 class="modal_subtitle">CSS</h2>
+				<div class="modal_info">
+					In their projects, all animation is often kept not only thanks to jQuery or JS, but also with the help of irreplaceable knowledge about CSS, which allows you to make a candy out of a simple markup of the site, which visually does not look as scary as it would be without it. Why reload the site once again with unnecessary JS plugins? or their analog (prototype) frameworks - yes, undoubtedly, they facilitate all knowledge about this or that action on the screen. But without practice in CSS to create some simple animations - it is impossible to do. The visual of the site is what a person sees, so a lot of responsibility lies with him. My knowledge about CSS, preprocessors, frameworks may not be enough, but I am learning and this site has become a good example of my knowledge in it.
+				</div>
+			</div>	
+		</div>
+		
+	</div>
+	</div>
+	
+	<div class="modal" id="js">
+	<div class="modal__dialog">
+			
+		<button class="close" type="button" data-close>
+			<img style="width: 34px; height: 34px;" src="images/black.png" alt="">
+		</button>
+			
+		<div class="modal_work">
+			<div class="modal_text">
+				<h2 class="modal_subtitle">JS</h2>
+				<div class="modal_info">
+					Most of the time I used JS - there were those moments when I needed to create complex animations on the site, a slide bar, modular windows, their animation when closing and opening, etc. For the most part, frameworks and partially small pieces of code in pure js were used
+				</div>
+			</div>	
+		</div>
+	</div>
+	</div>
+	
+	<script src="JS/app.js"></script>
+	
+	<script>
+	var loader = document.getElementById("preloader");
+		window.addEventListener("load", function(){
+			loader.style.display = "none"
+			
+		})
+	</script>
+	
+	
+</body>
+</html>

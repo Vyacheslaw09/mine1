@@ -1,0 +1,52 @@
+// main: ../style.less
+
+.intro__inner{
+    display: flex;
+	border-bottom: 1px solid @gray;
+	padding-bottom: 120px;
+	position: relative;	
+
+}
+
+.intro__content{
+    width: 50%;
+}
+.intro__photo{
+   position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	width: 45%;
+
+	
+}
+
+.intro__title{
+    font-weight: 200;
+    font-size: 2.13rem;
+    color: rgba(#2B2A2C, .7);  
+}
+
+.intro__subtitle{
+    font-size: 3rem;
+    color: @black;
+    font-weight: 700;
+}
+
+.intro__text{
+    font-size: 1.2rem;
+    color: rgba(#2B2A2C, .7)
+}
+
+.intro{
+	padding-top: 160px;
+}
+
+@media screen and (max-width: 1180px) {
+	.intro__content{
+		width: 100%;
+	}
+	.intro__photo{
+		bottom: 10px;
+	}
+	}
